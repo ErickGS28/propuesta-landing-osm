@@ -1,0 +1,149 @@
+/*
+Custom Css
+*/
+
+
+.store-buttons {
+  display: flex;
+  align-items: center;    /* opcional: alinea verticalmente */
+  gap: 10px;              /* separa un poco las imágenes */
+}
+
+/* Si prefieres no usar Flexbox, también funciona: */
+.store-buttons a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;     /* espacio entre ambas */
+}
+
+.OLDcustom-bg-page {
+    background-color: #FF0000; /* Color personalizado */
+    min-height: 100vh; /* Asegura que cubra toda la página */
+    color: white; /* Color de texto opcional */
+  }
+  
+  .elementoContador {
+    font-size: 10rem;
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+/* boton de regresar al inicio */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #a2daad;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.back-to-top:hover {
+    background-color: #0056b3;
+}
+
+.whatsapp-float {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.whatsapp-float a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg') no-repeat center;
+    background-size: 70%;
+}
+
+
+.play-store-button {
+    display: flex;
+    align-items: center;
+    background-color: #00a617;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+
+  .play-store-button:hover {
+    background-color: #00ff23;
+  }
+
+  .play-store-button img {
+    height: 24px;
+    margin-right: 10px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .close-button {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #f8f9fa;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #000;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @media only screen and (min-width: 769px) {
+    .close-button {
+      display: none;
+    }
+  }
+
+
+   /* Estilos generales para mejorar la visibilidad del carrusel en móviles */
+   @media only screen and (max-width: 768px) {
+    .tempaltemo-carousel {
+      max-width: 100%;
+      padding: 20px;
+    }
+
+    .carousel .carousel-inner .carousel-item .col-3 {
+      max-width: 100%;
+      padding: 10px;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Aumentar el tamaño de los controles del carrusel para facilitar su uso en móviles */
+    .carousel-control-prev, .carousel-control-next {
+      font-size: 2em;
+    }
+  }
+
+  .img-tamano-uniforme {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
