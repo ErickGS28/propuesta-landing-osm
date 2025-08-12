@@ -12,10 +12,6 @@ build/
 *.min.css
 *.min.js
 
-# Tailwind CSS
-src/output.css
-*.css.map
-
 # Environment variables
 .env
 .env.local
